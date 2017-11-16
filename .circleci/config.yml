@@ -17,7 +17,7 @@ variables:
       set -xu
       mkdir -p $TEST_REPORTS/junit/
       find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} $TEST_REPORTS/junit/ \;
-      #This dir contains html test outputs
+      #This dir contains html test outpu
       #mkdir -p ${TEST_REPORTS}/${GIT_FOLDER}
       #cp -r $GIT_FOLDER/build/reports/tests/* ${TEST_REPORTS}/${GIT_FOLDER}
   - &run-dockerbuild
